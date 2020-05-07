@@ -17,9 +17,9 @@ extension UIImage {
         let ciImage = CIImage(cgImage: cgImage)
 
         let inputParameters = [
-            "inputTopLeft": CIVector(cgPoint: points[1]),
+            "inputTopLeft": CIVector(cgPoint: CGPoint(x: points[0].x, y: CGFloat(cgImage.height) - points[0].y)),
             "inputTopRight": CIVector(cgPoint: CGPoint(x: points[3].x, y: CGFloat(cgImage.height) - points[3].y)),
-            "inputBottomLeft": CIVector(cgPoint: points[0]),
+            "inputBottomLeft": CIVector(cgPoint: CGPoint(x: points[1].x, y: CGFloat(cgImage.height) - points[1].y)),
             "inputBottomRight": CIVector(cgPoint: CGPoint(x: points[2].x, y: CGFloat(cgImage.height) - points[2].y))
         ]
         print(inputParameters)

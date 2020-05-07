@@ -41,6 +41,7 @@ struct ContentView: View {
                     let scaleX = CGFloat(cgImage.width) / self.displayedSize.width
                     let scaleY = CGFloat(cgImage.height) / self.displayedSize.height
                     let scaledPoints = self.quadrilateral.scaledPoints(using: scaleX, y: scaleY)
+                    print(scaledPoints)
                     self.image = self.image.correctPerspective(points: scaledPoints)
                     self.mode = .corrected
                 }.disabled(self.mode == .corrected)
