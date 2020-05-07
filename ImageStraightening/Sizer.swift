@@ -15,9 +15,11 @@ struct Sizer: View {
     private var handleDiameter: CGFloat {
         self.quadrilateral.correction
     }
+
     private var handleRadius: CGFloat {
         self.quadrilateral.correction / 2.0
     }
+
     var body: some View {
         GeometryReader { reader in
             ZStack(alignment: .topLeading) {
@@ -39,7 +41,8 @@ struct Sizer: View {
             .frame(width: reader.size.width, height: reader.size.height)
             .onAppear {
                 guard self.currentFrameSize == CGSize() else {
-                    // We're injecting values (perhaps because we're testing) so don't initialize values
+                    // We're injecting values (perhaps because we're testing, or in a preview)
+                    // so don't initialize values
                     return
                 }
                 self.currentFrameSize = reader.size
@@ -52,5 +55,16 @@ struct Sizer: View {
                                                            height: -self.handleRadius)
             }
         }
+    }
+}
+
+struct Sizer_Previews: PreviewProvider {
+    static let quadrilateral = Quadrilateral(correction: 50,
+                                             topLeftOffset: CGSize(width: 50, height: 50),
+                                             bottomLeftOffset: CGSize(width: 50, height: 250),
+                                             bottomRightOffset: CGSize(width: 250, height: 250),
+                                             topRightOffset: CGSize(width: 250, height: 50))
+    static var previews: some View {
+        Sizer(quadrilateral: .constant(Self.quadrilateral))
     }
 }
