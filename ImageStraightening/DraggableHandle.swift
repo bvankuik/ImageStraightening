@@ -23,6 +23,7 @@ struct DraggableHandle: View {
     @State private var previousOffset = CGSize()
     var body: some View {
         Handle(radius: self.radius)
+//            .overlay(Text(self.title)) // useful for debugging
             .offset(self.offset)
             .gesture(
                 DragGesture(minimumDistance: 0, coordinateSpace: .local)
@@ -36,5 +37,12 @@ struct DraggableHandle: View {
                     }
             )
             .onAppear { self.previousOffset = self.offset }
+    }
+}
+
+struct DraggableHandle_Previews: PreviewProvider {
+    static var previews: some View {
+        Rectangle().fill(Color.yellow).frame(width: 200, height: 100)
+            .overlay(DraggableHandle(title: "Test", radius: 40, offset: .constant(CGSize())))
     }
 }

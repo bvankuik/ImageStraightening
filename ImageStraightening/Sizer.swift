@@ -53,37 +53,4 @@ struct Sizer: View {
             }
         }
     }
-
-    // Translates handler offsets to image coordinates. The offsets are relative to this view. However, we want to know
-    // the offsets relative to the size of the underlying image.
-//    func points(for imageSize: CGSize) -> [CGPoint] {
-//        let transform = CGAffineTransform(scaleX: imageSize.width / currentFrameSize.width,
-//                                          y: imageSize.height / currentFrameSize.height)
-//        let topLeftOffset = self.topLeftOffset.applying(transform)
-//        let bottomLeftOffset = self.bottomLeftOffset.applying(transform)
-//        let bottomRightOffset = self.bottomRightOffset.applying(transform)
-//        let topRightOffset = self.topRightOffset.applying(transform)
-//        return [topLeftOffset.toPoint(), bottomLeftOffset.toPoint(),
-//                bottomRightOffset.toPoint(), topRightOffset.toPoint()]
-//    }
 }
-
-extension CGSize {
-    func toPoint() -> CGPoint {
-        return CGPoint(x: width, y: height)
-    }
-}
-
-// extension Sizer {
-//    // Inject values, useful for testing purposes
-//    init(currentFrameSize: CGSize, topLeftOffset: CGSize, bottomLeftOffset: CGSize, bottomRightOffset: CGSize,
-//         topRightOffset: CGSize) {
-//        let quadrilateral = Quadrilateral(topLeftOffset: topLeftOffset,
-//                                          bottomLeftOffset: bottomLeftOffset,
-//                                          bottomRightOffset: bottomRightOffset,
-//                                          topRightOffset: topRightOffset)
-//
-//        self._quadrilateral = Binding<Quadrilateral>.constant(quadrilateral)
-//        self._currentFrameSize = .init(initialValue: currentFrameSize)
-//    }
-// }
