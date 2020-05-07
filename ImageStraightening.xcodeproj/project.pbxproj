@@ -46,8 +46,6 @@
 		8921201C245ECB4300F684AB /* ImageStraighteningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageStraighteningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8921201E245ECB4300F684AB /* ImageStraighteningTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStraighteningTests.swift; sourceTree = "<group>"; };
 		89212020245ECB4300F684AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8921202F2460199E00F684AB /* ImageStraightening-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageStraightening-Bridging-Header.h"; sourceTree = "<group>"; };
-		892120302460199E00F684AB /* ImageStraighteningTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ImageStraighteningTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		8921203524601EE600F684AB /* Quadrilateral.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quadrilateral.swift; sourceTree = "<group>"; };
 		8921203824608C2300F684AB /* ViewSizePreferenceReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewSizePreferenceReader.swift; sourceTree = "<group>"; };
 		8921203B24615E8F00F684AB /* UIImage+Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Utilities.swift"; sourceTree = "<group>"; };
@@ -114,8 +112,6 @@
 				899A0C74245B07B3005B0F20 /* ContentView.swift */,
 				89212012245EC76900F684AB /* DraggableHandle.swift */,
 				89212014245EC77900F684AB /* Edge.swift */,
-				8921202F2460199E00F684AB /* ImageStraightening-Bridging-Header.h */,
-				892120302460199E00F684AB /* ImageStraighteningTests-Bridging-Header.h */,
 				899A0C7E245B07B6005B0F20 /* Info.plist */,
 				899A0C7B245B07B6005B0F20 /* LaunchScreen.storyboard */,
 				899A0C78245B07B6005B0F20 /* Preview Content */,
@@ -303,7 +299,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nl.dutchvirtual.ImageStraighteningTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ImageStraightening/ImageStraighteningTests-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -326,7 +321,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nl.dutchvirtual.ImageStraighteningTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ImageStraightening/ImageStraighteningTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ImageStraightening.app/ImageStraightening";
@@ -463,7 +457,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nl.dutchvirtual.ImageStraightening;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ImageStraightening/ImageStraightening-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -486,7 +479,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = nl.dutchvirtual.ImageStraightening;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "ImageStraightening/ImageStraightening-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
