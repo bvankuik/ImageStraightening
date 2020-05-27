@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890F9271247EE179005358A1 /* ImageStraightener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890F9270247EE179005358A1 /* ImageStraightener.swift */; };
 		89212013245EC76900F684AB /* DraggableHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89212012245EC76900F684AB /* DraggableHandle.swift */; };
 		89212015245EC77900F684AB /* Edge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89212014245EC77900F684AB /* Edge.swift */; };
 		89212017245EC7BE00F684AB /* Sizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89212016245EC7BE00F684AB /* Sizer.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		890F9270247EE179005358A1 /* ImageStraightener.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageStraightener.swift; sourceTree = "<group>"; };
 		89212012245EC76900F684AB /* DraggableHandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableHandle.swift; sourceTree = "<group>"; };
 		89212014245EC77900F684AB /* Edge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edge.swift; sourceTree = "<group>"; };
 		89212016245EC7BE00F684AB /* Sizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sizer.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				899A0C70245B07B3005B0F20 /* AppDelegate.swift */,
 				899A0C76245B07B6005B0F20 /* Assets.xcassets */,
 				899A0C74245B07B3005B0F20 /* ContentView.swift */,
+				890F9270247EE179005358A1 /* ImageStraightener.swift */,
 				89212012245EC76900F684AB /* DraggableHandle.swift */,
 				89212014245EC77900F684AB /* Edge.swift */,
 				899A0C7E245B07B6005B0F20 /* Info.plist */,
@@ -253,6 +256,7 @@
 				899A0C71245B07B3005B0F20 /* AppDelegate.swift in Sources */,
 				899A0C73245B07B3005B0F20 /* SceneDelegate.swift in Sources */,
 				8921203924608C2300F684AB /* ViewSizePreferenceReader.swift in Sources */,
+				890F9271247EE179005358A1 /* ImageStraightener.swift in Sources */,
 				899A0C75245B07B3005B0F20 /* ContentView.swift in Sources */,
 				89212017245EC7BE00F684AB /* Sizer.swift in Sources */,
 				89212015245EC77900F684AB /* Edge.swift in Sources */,
@@ -448,7 +452,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageStraightening/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MH8GQLL8BR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ImageStraightening/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -470,7 +474,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ImageStraightening/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = MH8GQLL8BR;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ImageStraightening/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
